@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  font-family: IBM Plex Sans Thai;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eff2f9;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+.custom-header {
+  background-color: #e8f2fc; /* เปลี่ยนเป็นสีที่ต้องการ */
+}
+@keyframes moveLoop {
+  0% {
+    top: 45px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 45px;
+  }
+}
+
+/* กำหนดการทำงานของ animation ที่สร้าง */
+.loop-animation {
+  position: absolute;
+  right: 1px;
+  animation: moveLoop 3.5s infinite; /* เรียกใช้ animation moveLoop ในเวลา 3 วินาที และทำงานโดยไม่สิ้นสุด (infinite) */
+}
+
+/* ส่วนเพิ่มเติมของ CSS ตามความต้องการ */
+.loop-animation img {
+  width: 495px;
+  height: 301px;
+}
+* {
+  font-family: IBM Plex Sans Thai;
+}
+#prefix {
+  color: #6c737b;
+  font-family: IBM Plex Sans Thai;
+}
+.custom-header {
+  color: #181846;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 400px;
+}
+.upload-button-class {
+  background-color: aquamarine;
+}
+.left-aligned-datagrid .MuiDataGrid-cell {
+  text-align: left;
+  display: flex;
+  align-items: center; /* Optional: Vertically align content */
+  padding-left: 16px; /* Optional: Add padding for better appearance */
+}
+.MuiDataGrid-columnSeparator {
+  cursor: col-resize;
+}
+.no-wrap-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* เพิ่ม ... เมื่อข้อความเกินขนาด */
+}
+.dialog-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* CSS สำหรับรูปภาพภายใน Dialog */
+.dialog-image img {
+  width: 100%; /* ให้รูปภาพเต็มความกว้างของ Dialog */
+  height: auto; /* ปรับความสูงให้พอดีโดยรักษาอัตราส่วน */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+/* เมื่อซูม */
+.dialog-image.zoom-in img {
+  transform: scale(1.5); /* เพิ่มขนาดรูปภาพ 1.5 เท่า */
+}
+.custom-row:hover {
+  cursor: pointer;
+}
