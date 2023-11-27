@@ -35,11 +35,11 @@ const upload = multer({
 // กำหนดการเชื่อมต่อ
 const config = {
   user: "sa",
-  server: "203.154.174.129",
-  password: "softwaredbo",
-  // server: "192.168.1.160",
-  // password: "warehousedbo",
-  port: 1443, // ระบุ port ของ SQL Server แยกออกมา
+
+
+   server: "192.168.1.160",
+   password: "warehousedbo",
+  port: 1443, 
   database: "similan_absent",
   options: {
     encrypt: false,
